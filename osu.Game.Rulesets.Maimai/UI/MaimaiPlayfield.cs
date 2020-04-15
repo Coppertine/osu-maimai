@@ -29,6 +29,7 @@ namespace osu.Game.Rulesets.Maimai.UI
         private readonly JudgementContainer<DrawableMaimaiJudgement> judgementLayer;
 
         private readonly MaimaiRing ring;
+        private readonly ColorBlastPiece colorBlast;
         public BindableNumber<int> RevolutionDuration = new BindableNumber<int>(0);
 
         public override bool ReceivePositionalInputAt(Vector2 screenSpacePos) => true;
@@ -63,6 +64,7 @@ namespace osu.Game.Rulesets.Maimai.UI
             Size = new Vector2(600);
             AddRangeInternal(new Drawable[]
             {
+                colorBlast = new ColorBlastPiece(),
                 new VisualisationContainer(),
                 ring = new MaimaiRing(),
                 HitObjectContainer,
@@ -97,6 +99,8 @@ namespace osu.Game.Rulesets.Maimai.UI
             switch (judgedObject)
             {
                 case DrawableTouchHold TH:
+                    if (result.Type == Rulesets.Scoring.HitResult.Great || result.Type == Rulesets.Scoring.HitResult.Perfect)
+                        colorBlast.Blast();
                     explosion = new DrawableMaimaiJudgement(result, maimaiObj)
                     {
                         Origin = Anchor.Centre,
