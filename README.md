@@ -53,7 +53,7 @@ Using the `Build` command from your IDE should generate a DLL file within the ou
 You can also build maimai for osu! from the command-line with a single command:
 
 ```sh
-dotnet build osu.Game.Rulesets.Maimai
+dotnet build osu.Game.Rulesets.Sentakki
 ```
 
 ## Contributing
@@ -62,6 +62,6 @@ I welcome any sort of contributions, as long as they are helpful. Those who aren
 
 ## Licence
 
-Maimai for osu! is licensed under the [MIT licence](https://opensource.org/licenses/MIT). Please see the licence file for more information. tl;dr you can do whatever you want as long as you include the original copyright and license notice in any copy of the software/source.
+Sentakki for osu! is licensed under the [MIT licence](https://opensource.org/licenses/MIT). Please see the licence file for more information. tl;dr you can do whatever you want as long as you include the original copyright and license notice in any copy of the software/source.
 
 Do take note that project dependencies may not share the same license.
