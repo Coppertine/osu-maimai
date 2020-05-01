@@ -20,12 +20,6 @@ namespace osu.Game.Rulesets.Sentakki.Tests.Objects
     [TestFixture]
     public class TestSceneBreakNote : OsuTestScene
     {
-        public override IReadOnlyList<Type> RequiredTypes => new[]
-        {
-            typeof(DrawableBreak),
-            typeof(Break)
-        };
-
         private readonly Container content;
         protected override Container<Drawable> Content => content;
 

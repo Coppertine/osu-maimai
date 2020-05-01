@@ -11,12 +11,6 @@ namespace osu.Game.Rulesets.Sentakki.Tests.UI
     public class TestSceneSentakkiRing : OsuTestScene
     {
         private SentakkiRing ring;
-
-        public override IReadOnlyList<Type> RequiredTypes => new[]
-        {
-            typeof(SentakkiRing)
-        };
-
         public TestSceneSentakkiRing()
         {
             AddStep("Clear test", () =>

@@ -20,12 +20,6 @@ namespace osu.Game.Rulesets.Sentakki.Tests.Objects
     [TestFixture]
     public class TestSceneTouchHold : OsuTestScene
     {
-        public override IReadOnlyList<Type> RequiredTypes => new[]
-        {
-            typeof(DrawableTouchHold),
-            typeof(TouchHoldCircle)
-        };
-
         private readonly Container content;
         protected override Container<Drawable> Content => content;
 
